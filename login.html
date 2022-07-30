@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Login</title>
+	<link rel="stylesheet" type="text/css" href="login.css">
+	<script src="login.js"></script>
+</head>
+<body>
+	<div class="kotak_login">
+		<p class="tulisan_login">LOGIN</p>
+ 
+		<form>
+			<label>Username</label>
+			<input type="text" name="username" class="form_login" placeholder="Username atau email .." id="username" >
+ 
+			<label>Password</label>
+			<input type="password"name="password" class="form_login" placeholder="Password .." id="password" >
+		</form>
+			<div class="button">
+			<input type="submit" value="Login" id="log" onclick="checkform()" />
+			</div>
+	</div>
+
+	 <!-- Sweet alert -->
+	 <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+	 <script>
+	   function checkform() {
+		 var username = document.getElementById("username").value;
+		 var password = document.getElementById("password").value;
+ 
+		 if (username == "" || password == "") {
+		   swal("Maaf", "Inputan Tidak Boleh Kosong!", "error");
+		 } else {
+		   swal({
+			 title: "Selamat!",
+			 text: "Berhasil Login!",
+			 icon: "success",
+ 
+		   }).then((lanjut) => {
+			 if (lanjut) {
+			   window.location.href = "index.html";
+			 }
+		   });
+		 }
+	   }
+	 </script>
+</body>
+</html>

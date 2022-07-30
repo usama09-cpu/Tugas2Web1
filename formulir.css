@@ -1,0 +1,65 @@
+@import url(https://fonts.googleapis.com/css2?family=Poppins&display=swap);
+
+body{
+    font-size: 15;
+    font-family: 'Poppins', sans-serif;
+    margin: 100;
+    padding: 0;
+    color: #333;
+}
+.containrt{
+    width: 730px;
+    margin: 1px;
+}
+.header  {
+    color: #f05462;
+    text-shadow: 1px 1px 0px #333,2px 2px #666;
+}
+.header p{
+    font-weight: 900;
+    color: #f05462;
+}
+.form-container{
+    background: whitesmoke;
+    padding: 20px;
+    border: 1px solid #f05462;
+    position: relative;
+    border-radius: 3px;
+    margin-bottom: 30px;
+}
+fieldset{
+    border: 3px solid #f05462;
+}
+.form-grup{
+    margin-bottom: 20px;
+    margin-right: 20px;
+}
+.form-grup:after, .form-grup::before{
+    display: table;
+}
+.form-grup:after{
+    clear: both;
+}
+.label {
+    float: left;
+    width: 30%;
+    border: 0;
+    font-weight: 900;
+    color: #777;
+    font-size: 12px;
+}
+.input{
+    float: left;
+    width: 100%;
+    border: 0;
+}
+input[type=text], select, input[type=password], input[type=email], input[type=date], textarea{
+    border: 2px solid #bbb;
+    padding: 8px;
+    border-radius: 3px;
+    background: #fff;
+    width: 100%;
+    font-family: inherit;
+}
+
+

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="data.css" type="text/css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="containrt">
+        <h1 class="header">Formulir Pendaftaran Mahasiswa Baru</h1>
+        <p>Silahkan isi secara lengkap</p>
+    </div>
+    <div class="form-container">
+        <form>
+            <fieldset>
+                <legend>Informasi Primer</legend>
+                <div class="form-grup">
+                    <div>
+                        <Label>Nama Lengkap</Label>
+                    </div>
+                    <div class="input">
+                        <input type="text" name="nama" placeholder="Isikan nama lengkap Anda">
+                    </div>
+                </div>
+                <div class="form-grup">
+                    <div>
+                        <Label>Email</Label>
+                    </div>
+                <div class="input">
+                    <input type="email" name="email" placeholder="mls. email@gmail.com">
+                </div>
+                </div>
+                <div class="form-grup">
+                    <div>
+                        <Label>Asal Daerah</Label>
+                    </div>
+                <div class="input">
+                    <select name="Provensi">
+                        <option value="" selected>--Pilih Daerah--</option>
+                        <option value="Sulawesi">Sulawesi</option>
+                        <option value="kalimantan">kalimantan</option>
+                        <option value="sumatera">sumatera</option>
+                        <option value="Papua">Papua</option>
+                        <option value="Aceh">Aceh</option>
+                    </select>
+                </div>
+                </div>
+                <div class="form-grup">
+                    <div>
+                        <Label>Gender</Label>
+                    </div>
+                <div class="input">
+                    <input type="radio" name="gender" value="1">Laki-laki <br>
+                    <input type="radio" name="gender" value="2">Perempuan
+                </div>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Informasi Sekunder</legend>
+                <div class="form-grup">
+                    <div>
+                        <Label>alamat Lengkap</Label>
+                    </div>
+                    <div class="input">
+                        <textarea name="alamat" placeholder="Isi alamat Lengkap Anda"></textarea>
+                    </div>
+                </div>
+                <div class="form-grup">
+                    <div>
+                        <Label>Kendaraan</Label>
+                    </div>
+                <div class="input">
+                    <input type="checkbox" name="kendaraan" value="mobil">mobil <br>
+                    <input type="checkbox" name="kendaraan" value="motor">motor <br>
+                    <input type="checkbox" name="kendaraan" value="sepeda">sepeda <br>
+                </div>
+                </div>
+                <div class="form-grup">
+                    <div>
+                        <Label>Gender</Label>
+                    </div>
+                <div class="input">
+                    <input type="radio" name="gender" value="1">Laki-laki <br>
+                    <input type="radio" name="gender" value="2">Perempuan
+                </div>
+                </div>
+                <div class="form-grup">
+                    <div>
+                        <Label>Tanggal</Label>
+                    </div>
+                <div class="input">
+                    <input type="date" name="Tanggal-lahir">
+                </div>
+                </div>
+                <div class="form-grup">
+                    <div>
+                        <Label>Foto ukuran 4x6</Label>
+                    </div>
+                <div class="input">
+                    <label for="file-foto">Upload foto</label>
+                    <input id="file-foto" type="file" name="foto">
+                </div>
+                </div>
+            </fieldset>
+            <div class="from-grup">
+                <button type="submit">Simpan</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

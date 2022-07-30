@@ -1,0 +1,17 @@
+@import url(https://fonts.googleapis.com/css2?family=Poppins&display=swap);
+
+body{
+    font-size: 15;
+    font-family: 'Poppins' sans-serif;
+    margin: 100;
+    padding: 0;
+    color: #333;
+}
+.containrt{
+    width: 730px;
+    margin: 0;
+}
+.header h1{
+    color: #fff;
+    text-shadow: 1px 1px 0px #333,2px 2px #666;
+}

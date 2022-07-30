@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="formulir.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script>
+        function simpan() {
+            var isi = document.getElementById("email", "lengkap", "provensi", "gender", "nisd", "asal", "tahun",
+                "alamat", "jk", "tgl", "file").value;
+            if (isi == "") {
+                swal("Maaf", "Data Tidak Boleh Kosong!", "error");
+            } else {
+                swal({
+                        title: "Yey!",
+                        text: "Data Telah Terisi!",
+                        icon: "success",
+                    })
+                    .then((next) => {
+                        if (next) {
+                            window.location.href = "index.html";
+                        }
+                    });
+            }
+        }
+    </script>
+
+    <div class="logo">
+        <a href="index.html"><img src="home.png" alt="image" width="55px" height="55px"></a>
+    </div>
+    <div class="containrt">
+        <h1 class="header">Formulir Pendaftaran</p>
+    </div>
+    <div>
+        <div class="form-container">
+            <form>
+                <fieldset>
+                    <legend>Informasi Primer</legend>
+                    <div class="form-grup">
+                    </div>
+                    <div>
+                        <Label>Nama Lengkap</Label>
+                    </div>
+                    <div class="input">
+                        <input type="text" name="nama" placeholder="Isikan nama lengkap Anda" id="lengkap">
+                    </div>
+                    <div class="form-grup">
+                        <div>
+                            <Label>Email</Label>
+                        </div>
+                        <div class="input">
+                            <input type="email" name="email" placeholder="mls. email@gmail.com" id="email">
+                        </div>
+                    </div>
+                    <div class="form-grup">
+                        <div>
+                            <Label>Asal Daerah</Label>
+                        </div>
+                        <div class="input">
+                            <select name="Provensi" id="provensi">
+                                <option value="" selected>--Pilih Daerah--</option>
+                                <option value="Sulawesi">Sulawesi</option>
+                                <option value="kalimantan">kalimantan</option>
+                                <option value="sumatera">sumatera</option>
+                                <option value="Papua">Papua</option>
+                                <option value="Aceh">Aceh</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-grup">
+                        <div>
+                            <Label>Gender</Label>
+                        </div>
+                        <div class="input">
+                            <input type="radio" id="gender" name="gender" value="1">Laki-laki <br>
+                            <input type="radio" id="gender" name="gender" value="2">Perempuan
+                        </div>
+                    </div>
+        </div>
+        </fieldset>
+        <fieldset>
+            <legend>Informasi Siswa</legend>
+            <div class="form-grup">
+                <div>
+                    <Label>Nisd</Label>
+                </div>
+                <div class="input">
+                    <input type="text" name="nisd" placeholder="Masukkan nisd anda..." id="nisd">
+                </div>
+            </div>
+            <div class="form-grup">
+                <div>
+                    <Label>Asal sekolah</Label>
+                </div>
+                <div class="input">
+                    <input type="text" name="sekolah" placeholder="Masukkan Asal Sekolah anda..." id="asal">
+                </div>
+            </div>
+            <div class="form-grup">
+                <div>
+                    <Label>Tahun Lulusan</Label>
+                </div>
+                <div class="input">
+                    <select name="tahun-lulus" id="tahun">
+                        <option value="" selected>--Pilih Tahun--</option>
+                        <option value="2018">2018</option>
+                        <option value="2019">2019</option>
+                        <option value="2020">2020</option>
+                        <option value="2021">2021</option>
+                        <option value="2022">2022</option>
+                    </select>
+                </div>
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Informasi Sekunder</legend>
+            <div class="form-grup">
+                <div>
+                    <Label>alamat Lengkap</Label>
+                </div>
+                <div class="input">
+                    <textarea name="alamat" placeholder="Isi alamat Lengkap Anda" id="alamat"></textarea>
+                </div>
+            </div>
+            <div class="form-grup">
+                <div>
+                    <Label>Kendaraan</Label>
+                </div>
+                <div class="input">
+                    <input type="checkbox" name="kendaraan" value="mobil">mobil <br>
+                    <input type="checkbox" name="kendaraan" value="motor">motor <br>
+                    <input type="checkbox" name="kendaraan" value="sepeda">sepeda <br>
+                </div>
+            </div>
+            <div class="form-grup">
+                <div>
+                    <Label>Gender</Label>
+                </div>
+                <div class="input" id="jk">
+                    <input type="radio" name="gender" value="1">Laki-laki <br>
+                    <input type="radio" name="gender" value="2">Perempuan
+                </div>
+            </div>
+            <div class="form-grup">
+                <div>
+                    <Label>Tanggal</Label>
+                </div>
+                <div class="input">
+                    <input type="date" placeholder="Time" name="Tanggal-lahir" id="tgl" required />
+                </div>
+            </div>
+            <div class="form-grup">
+                <div>
+                    <Label>Foto ukuran 4x6</Label>
+                </div>
+                <div class="input">
+                    <label for="file-foto">Upload foto</label>
+                    <input id="file-foto" type="file" name="foto">
+                </div>
+            </div>
+        </fieldset>
+    </div>
+    <div class="from-grup">
+        <input type="submit" id="simpan" onclick="simpan()" />
+    </div>
+
+</body>
+
+</html>

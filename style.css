@@ -1,0 +1,96 @@
+@import url(https://fonts.googleapis.com/css2?family=Poppins&display=swap);
+*{
+    margin: 0%;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    min-height: 100hv;
+    display: flex;
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+.sidebar{
+    position: fixed;
+    background-color: #54f0c1;
+    width: 301px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 3px 6px rgba(95, 92, 92, 0.911);
+}
+.sidebar .brand-name{
+    height: 10vh;
+    display: flex;
+    font-size: 12px;
+    align-items: flex-start;
+    color:white;
+    flex-direction: column;
+    font-weight: normal;
+}
+.brand-name li .tombol{
+font-size: 23px;
+padding: 5px;
+color: white;
+display: flex;
+align-items: center;
+}
+.brand-name li:hover{
+    background-color: #8300f6;
+    padding: 6px 80px;
+    border: 1px solid white;
+}
+.container  {
+    position: absolute;
+    right: 0;
+    top: 0;
+    right: 0;
+    width: 80vw;
+    background: white;
+}
+.logo li img{
+    width: 50px;
+    height: 50px;
+} 
+.sidebar .nama h3 ,h4{
+    position: relative;
+    color: white;
+}
+.main {
+    margin-left: 300px;
+    text-align: center;
+}
+.main h2{
+    margin-top: 50px;
+}
+.logo{
+    display: flex;
+    border-bottom: 1px white;
+    padding: 4px;
+    color: aliceblue;
+}
+.top-bar{
+    position: fixed;
+    height: 50px;
+    width: calc(100%-300px);
+    background-color: #4019dd;
+}
+.button{
+    padding: 5px;
+}
+#log{
+    font-size: 22px;
+    background-color: #5483f0;
+    color: white;
+    border: none;
+}
+#log:hover{
+    border: 1px solid white;
+    padding: 6px 80px;
+    border-radius: white;
+}
